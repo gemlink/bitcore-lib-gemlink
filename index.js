@@ -7,9 +7,9 @@ bitcore.version = 'v' + require('./package.json').version;
 bitcore.versionGuard = function(version) {
   return
   if (version !== undefined) {
-    var message = 'More than one instance of bitcore-lib-tent found. ' +
-      'Please make sure to require bitcore-lib-tent and check that submodules do' +
-      ' not also include their own bitcore-lib-tent dependency.';
+    var message = 'More than one instance of bitcore-lib-gemlink found. ' +
+      'Please make sure to require bitcore-lib-gemlink and check that submodules do' +
+      ' not also include their own bitcore-lib-gemlink dependency.';
     throw new Error(message);
   }
 };
